@@ -1,0 +1,355 @@
+.btn1{
+  margin-right: 15px;
+  
+  width: 130px;
+  height: 40px;
+  border: 4;
+  border-radius: 8px;
+  font-size: 20px;
+  font-weight: 500;
+  
+}
+.btn1:hover{
+  background-color: #1bc0e997;
+}
+
+.btn2{
+  
+  width: 150px;
+  height: 40px;
+  border: 4;
+  border-radius: 8px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.btn2:hover{
+  background-color: #1bc0e997;
+}
+.aa{
+  font-size: 22px;
+  font-weight: 700;
+  color: #1B2FE9;
+}
+.hover1:hover{
+  background-color: #1B2FE9;
+}
+
+/*////////////*/
+#logout{
+  color: #000;
+  font-size: 20px;
+}
+.head{
+  text-align: center;
+}
+a{
+  color: #000;
+  text-decoration: none;
+}
+
+ul{
+  list-style: none;
+}
+.btn3{
+  background-color: #1BBFE9;
+  border: 0;
+  width: 130px;
+  height: 40px;
+  border-radius: 12px;
+}
+#logout{
+  font-size: 22px;
+  font-weight: 600;
+  list-style-type: none;
+}
+
+.section-form {
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  width: 45%;
+  text-align: center;
+
+  background-image: linear-gradient(to bottom right, #fff,white  );
+  padding: 20px;
+}
+#user_info{
+  display: none;
+}
+#user{
+  font-size: 22px;
+  font-weight: 600;
+  color: #1bc0e9d2;
+  margin-right: 10px;
+}
+
+.icon{
+  color: #080481;
+}
+
+
+nav ul#user_info li i {
+  color: #1bc0e9d2;
+  font-size: 35px;
+  cursor: pointer;
+  margin-right:20px ;
+  margin-top: 10px;
+}
+nav ul#user_info li{
+  margin: 0px 10px;
+  position: relative;
+}
+nav ul#user_info li .badge {
+  position: absolute;
+  width: 23px;
+  height: 23px;
+  background-color: rgba(255, 0, 0, 0.911);
+  color: #fff;
+  text-align: center;
+  display: block;
+  border-radius: 50%;
+  top:-4px;
+  right: 10px;
+  font-size: 13px;
+  display: none;
+}
+
+.carts_products {
+  color: black;
+  font-size: 20px;
+  position: absolute;
+  width:210px;
+  transform: translate(-50px,0);
+  background-color: rgba(67, 64, 64, 0.763);
+  top: 60px;
+  padding: 10px;
+  border: 1px solid #1BBFE9;
+  z-index: 10000;
+  display: none;
+}
+.carts_products a {
+ display: block;
+ color: #000;
+ margin: 4px 0;
+ padding: 0;
+ background-color: #1BBFE9;
+ color: #423939;
+ text-align: center;
+ text-decoration: none;
+}
+
+.label{
+  display: block;
+  font-size: 22px;
+}
+.search{
+  width: 100%;
+  height: 35px;
+  border: 1;
+  border-radius:6px;
+  margin-top: 10px;
+  margin-bottom:10px ;
+}
+
+.products{
+  margin-top: 50px;
+}
+.card {
+  margin: auto;
+  margin-bottom: 20px;
+}  
+
+/*//////////////////////////*/
+
+.container .card {
+  position: relative;
+  width: 320px;
+  height: 450px;
+  background: #232323;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.container .card:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #1BBFE9;
+  clip-path: circle(150px at 80% 20%);
+  transition: 0.5s ease-in-out;
+}
+
+.container .card:hover:before {
+  clip-path: circle(300px at 80% -20%);
+}
+
+.container .card:after {
+  content: "Nike";
+  position: absolute;
+  top: 30%;
+  left: -20%;
+  font-size: 12em;
+  font-weight: 800;
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.04);
+
+}
+
+.container .card .imgBx {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1000;
+  width: 100%;
+  height: 100%;
+  transition: .5s;
+}
+
+.container .card:hover .imgBx {
+  top: 0%;
+  transform: translateY(-25%);
+  /* bug  */
+}
+
+.container .card .imgBx img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(20deg);
+  width: 270px;
+}
+
+.container .card .contentBx {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  text-align: center;
+  transition: 1s;
+  z-index: 90;
+}
+
+.container .card:hover .contentBx {
+  height: 210px;
+}
+
+.container .card .contentBx h2 {
+  position: relative;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #fff;
+}
+
+.container .card .contentBx .size,
+.container .card .contentBx .color {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1px 10px;
+  transition: .5s;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.container .card:hover .contentBx .size {
+  opacity: 1;
+  visibility: visible;
+  transition-delay: .5s;
+}
+
+.container .card:hover .contentBx .color {
+  opacity: 1;
+  visibility: visible;
+  transition-delay: .6s;
+}
+
+.container .card .contentBx .size h3,
+.container .card .contentBx .color h3 {
+  color: white;
+  font-weight: 300;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-right: 10px;
+}
+
+.container .card .contentBx .size span {
+  width: 26px;
+  height: 26px;
+  text-align: center;
+  line-height: 26px;
+  font-size: 14px;
+  display: inline-block;
+  color: #111;
+  background: #fff;
+  margin: 0 5px;
+  transition: .5s;
+  color: #111;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.container .card .contentBx .size span:hover {  /* other bug */
+  background: #B90000;
+}
+
+.container .card .contentBx .color span {
+  width: 20px;
+  height: 20px;
+  background: #ff0;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.container .card .contentBx .color span:nth-child(2) {
+   background: #1BBFE9;
+}
+
+.container .card .contentBx .color span:nth-child(3) {
+   background: #1B2FE9;
+}
+
+.container .card .contentBx .color span:nth-child(4) {
+   background: #080481;
+}
+
+.container .card .contentBx a {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #fff;
+  border-radius: 4px;
+  margin-top: 10px;
+  text-decoration: none;
+  font-weight: 600;
+  color: #111;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: .5s;
+}
+
+.container .card:hover .contentBx a {
+  opacity: 1;
+  transform: translateY(0px);
+  transition-delay: .7s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
